@@ -32,7 +32,7 @@
         </p>
         <p>This is another paragrah hehe</p>
         <!--if you wish to use a component of a reserved tag( or whole tag) you would be in trouble using the tag
-        instead you can use special character strings to represent components of the tag such as the < (&lt;) and the > (&gt;) symbols-->
+            instead you can use special character strings to represent components of the tag such as the < (&lt;) and the > (&gt;) symbols-->
         <h3>List tags: &lt;ol&gt; and &lt;ul&gt; </h3>
         <!--block tag
         creat an ordered list (numbered) using <ol)
@@ -46,7 +46,7 @@
             <li>press install</li>
             <li>to use
                 <ol> 
-                    <li>open a html page<li>
+                    <li>open a html page</li>
                     <li>make any adjustments</li>
                     <li>save any adjustments</li>
                     <li>look to bottom right on blue status line for Go Live and press</li>
@@ -64,8 +64,8 @@
         <h3>Anchor tag ( a.k.a. linking to another page)</h3>
         <!--Block paired
             This is a anchor tag and is incorrectly and often referred to as the link tag
-            one should not use the link tag because there is actually a <link>
-            used in the head section
+                one should not use the link tag because there is actually a <link>
+                used in the head section
             the anchor tag can take you to a different location whether it be a different website, different page in the current website
             or a different a different location on the current page
 
@@ -76,5 +76,41 @@
                 _blank will open a new browser tab (page)
         -->
         <a href="https://www.nait.ca" target="_blank">go to Nait</a>
+
+        <h3>Image tag</h3>
+        <!--an empty (void) tag
+            Image tag does not have a closing tag
+                the image tag has no content, however it does have parameters
+            
+            parameters
+            src="relative web site location"
+            alt="printable text if the image is not found at src"
+            [title="tool tip text for the image"]
+
+            Absolute addressing is a complete fixed file path
+                drive:/folder/..../folder/filename.ext
+
+            a relative address begins at a specified point for websites, it is the "top of the website"
+                reference to the desired filename is done by specifying the appropiate folder path to the desired file
+            NO DRIVE
+            
+            movement with a relative address
+            - if only the file name is given the location is within the same folder
+            -movement down the file structure is by /foldername
+            -movement up the file structure is by using " .. " for each folder level to a ascend 
+
+            same folder
+            ="filename.ext"
+
+            lower folder
+            ="nextleveldownfoldername/nextleveldownfoldername/.../filename.ext"
+
+            from one lower folder to another to another lower folder on a different branch
+            ".." for each level that need to be ascended
+            ="../../../nextleveldownfoldername/filename.ext"
+        -->
+        <img src="img/photoshop.png" alt="logo photoshop"
+            title="a logo image og photoshop">
+            <a href="https://www.nait.ca" target="_blank"></a>
     </body>
 </html>
