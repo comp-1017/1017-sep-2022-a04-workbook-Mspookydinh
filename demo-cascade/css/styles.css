@@ -1,0 +1,90 @@
+footer {
+    background-color: #333333;
+}
+
+ /* we can specify multiple selectors seperated by commas for a single decleration
+ */
+
+footer,
+footer a {
+    color: white;
+}
+
+/* use descendant selectors to be more precise; the following rule applies to any ul elements that are desendants of nav elements
+*/
+
+nav ul {
+    background-color: #dddddd;
+}
+
+/* we can specify any number of descendants; the following rule applies to any li elements that are descendants of ul elements,
+which are themselves descendants of nav elements
+*/
+
+nav ul li {
+    border-bottom: 1px solid #333333;
+}
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* Pseudo classes allow us to target elements in the hover state (i.e. when the mouse cursor is over them)
+*/
+
+nav ul li a:hover {
+    color: blue;
+    font-weight: bold;
+    font-size:larger;
+}
+
+nav ul li a:active {
+    color: red;
+}
+
+.bulletremoval {
+    list-style: none;
+}
+
+/* class selectors can be used to be more specific when selecting elements and have a higher priority than simple simple element selectors aline
+*/
+
+nav ul.bulletremoval {
+    padding: 10px;
+}
+
+/* NOTE TO SELF you either use this which is basically more advance or use class instead
+but dont forget to use
+
+There's differnt classes , user classes is first learnt,,
+Pseudo classes are attatched to elements
+
+the anchor tag has several pseudo classes.
+(the order in which you order ur code your pseudo classes for the anchor classes are extremely important 
+
+a:link unused link
+a:hover used when mouse cursor hovers over the anchor tag link
+a:visited used when the anchor tag link has been clicked on previously
+a:active used when anchor tag link is clicked on
+*/
+ /* targetted class 
+ has element.classname
+*/
+
+/* child selectors
+
+this is a element selctor within another element that is not necessarily below the parent selector */
+
+main p {
+    font-style: italic;
+}
+
+body header {
+    font-style:italic
+}
+
+/* id selector 
+similar to a class selector BUT is supposed to be use once one a page where as a class can is used multiple times
+
+syntas #user-name{rules}
+so on the html page: id="user-name" */
