@@ -8,3 +8,61 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 }
+
+/* 
+typography
+*/
+
+h1, h2 {
+	padding: 10px;
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #747474;
+}
+
+/* layout */
+
+nav {
+	margin-top: 48px;
+	background-color: #dddddd;
+}
+
+header {
+	height: 450px;
+	margin-top: 24px;
+	background-color:#dddddd
+}
+
+
+main {
+	height: 800px;
+	margin-top: 24px;
+	background-color:#dddddd;
+}
+
+main section {
+	width: 896px;
+	border: 2px solid black;
+	background-color: white;
+	margin: 30px;
+	height: 200px;
+}
+
+footer {
+	margin-top: 24px;
+	background-color: #dddddd;
+	height: 150px;
+	margin-bottom: 48px;
+}
+
+/* 
+how does one know total width?
+
+box model
+total width = 1m + 1b + 1p + content width + width + rp + rb + rm
+960 = 30 + 2 + 0 + width + 0 + 2 + 30
+960 = width + 64
+896 = width
+*/
